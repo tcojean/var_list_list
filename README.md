@@ -39,7 +39,7 @@ Some aspects of the solution are detailed in the comments, at a high level there
 
 There are unknowns in this solution which would decide whether it fits or not:
 + The overhead of `std::any`. Overall, only the
-  [`std::any_cast`](var_list_list.hpp:66) is relevant, but it is only called
+  [`std::any_cast`](./var_list_list.hpp#L66) is relevant, but it is only called
   once when accessing a matching `var_list` to obtain its concrete type in the
   `var_list_list`. The enum trick should not cost anything, particularly since it
   can be prepared at compile-time.
